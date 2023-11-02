@@ -50,6 +50,7 @@
 - Fix: 個人カードのemojiがバッテリーになっている問題を修正
 - Fix: 標準テーマと同じIDを使用してインストールできてしまう問題を修正
 - Fix: 絵文字ピッカーでバッテリーの絵文字が複数表示される問題を修正 #12197
+- Fix: Use the instance `host` instead of the current `host` #6724
 
 ### Server
 - Enhance: RedisへのTLのキャッシュ(FTT)をオフにできるように
