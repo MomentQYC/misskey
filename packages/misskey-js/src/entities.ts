@@ -19,6 +19,8 @@ export type UserLite = {
 	avatarDecorations: {
 		id: ID;
 		url: string;
+		angle?: number;
+		flipH?: boolean;
 	}[];
 	emojis: {
 		name: string;
@@ -104,6 +106,7 @@ export type MeDetailed = UserDetailed & {
 	hasUnreadMessagingMessage: boolean;
 	hasUnreadNotification: boolean;
 	hasUnreadSpecifiedNotes: boolean;
+	unreadNotificationsCount: number;
 	hideOnlineStatus: boolean;
 	injectFeaturedNote: boolean;
 	integrations: Record<string, any>;
