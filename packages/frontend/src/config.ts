@@ -8,7 +8,6 @@ import { miLocalStorage } from '@/local-storage.js';
 const address = new URL(location.href);
 const siteName = document.querySelector<HTMLMetaElement>('meta[property="og:site_name"]')?.content;
 
-// export const host = address.host;
 export const hostname = address.hostname;
 export const url = address.origin;
 export const apiUrl = url + '/api';
