@@ -25,8 +25,8 @@ fetch(apiUrl + '/meta', {
 	return response.json();
 } ).then( res => {
 	const data = res.uri;
-	host = data.replace(/^https?:\/\//, '')
-	instanceName = siteName === 'Misskey' ? host : siteName
+	host = data.replace(/^https?:\/\//, '');
+	instanceName = siteName === 'Misskey' ? host : siteName;
 } );
 export const wsUrl = url.replace('http://', 'ws://').replace('https://', 'wss://') + '/streaming';
 export const lang = miLocalStorage.getItem('lang') ?? 'en-US';
